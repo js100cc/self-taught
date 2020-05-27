@@ -128,7 +128,7 @@ hanoi(3, 'A', 'B', 'C');  // 得到 hanoi 的 CLI 方案
 
 另外一个示例是，一个数要么加5要么乘3，新数重复此操作，得到无穷多数，形成一个集合。取集合中任意两个数，找出一种 start 到 end 的路径。
 
-```js```
+```js
 // 此例来自 eloquentjavascript.net
 function pathForNumber(start, end, history) {
   if (start == end) {
