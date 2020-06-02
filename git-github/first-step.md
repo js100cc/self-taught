@@ -35,11 +35,15 @@ git push -u origin master
 使用 ssh 生成密钥，私钥放在本地，公钥放到 github，可以避免每次输入 github 的账号和密码。
 
 ```sh
-# 
 ssh-genkey
 ssh-agent
 ssh-add
 ssh -T git@github.com # 将 github.com 添入 ~/.ssh/known_hosts
+
+# 如果之前 remote 设置了 https 的地址，改为 ssh
+git remote rm origin
+# 替换[  ]中的内容
+git remote add origin git@github.com:[username]/[reponame].git
 ```
 
 github settings 页面 ssh 相关部分放入 keyname.pub 公钥。
