@@ -39,6 +39,7 @@ git push -u origin master
 ssh-genkey
 ssh-agent
 ssh-add
+ssh -T git@github.com # 将 github.com 添入 ~/.ssh/known_hosts
 ```
 
 github settings 页面 ssh 相关部分放入 keyname.pub 公钥。
